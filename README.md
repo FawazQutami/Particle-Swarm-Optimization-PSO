@@ -27,7 +27,7 @@ the best "global optimum".
 ## Study Cases: 
 
 ### Unimodal Functions (2):
-	#### Shifted Sphere Function:
+#### Shifted Sphere Function:
 		 ----------------------------------------------------------
 		 Best Fitness - Cost       : 31423.124170769403
 		 Function Name             : Shifted Sphere
@@ -38,10 +38,9 @@ the best "global optimum".
 		 Execution Time in seconds : 24
 		 ----------------------------------------------------------
 ![Shifted Sphere for Dimension = 50](/images/PSO_ShiftedSphere_50.png)
+![Shifted Sphere for Dimension = 50](/images/PSO_ShiftedSphere_50.png)
 		 
-		 
-
-	#### Shifted Schwefel’s Function:
+#### Shifted Schwefel’s Function:
 		
 		
 		
