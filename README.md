@@ -37,7 +37,7 @@ the best "global optimum".
 		 Dimension                 : 50
 		 Execution Time in seconds : 24
 		 ----------------------------------------------------------
-		![Shifted Sphere for Dimension = 50](/images/PSO_ShiftedSphere_50.png)
+![Shifted Sphere for Dimension = 50](/images/PSO_ShiftedSphere_50.png)
 		 
 		 
 
