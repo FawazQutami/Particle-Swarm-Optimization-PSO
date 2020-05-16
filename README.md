@@ -19,14 +19,16 @@ This is expected to move the swarm toward the best solutions." from: https://en.
 	
 ## Study Cases: 
 I have tried, through the below cases, to understand the principle of PSO and how it works, especially, when tweaking the parameters to achieve 
-the best "global optimum".Just for the sake of illustration, I have used the same parameters for each function, as well as plotted the curves.
-In addition, I've included the execution time in seconds for each function. 
+the best "global optimum".
+For the sake of illustration, I have used the same parameters for all functions.
+In addition, I've included the total execution time in seconds for each function, where I will run it for 25 times, to evaluate the best solution possible. 
 
 ### Unimodal Functions (2 functions):
 
 #### Shifted Sphere Function:
-	 ----------------------------------------------------------
-	 Best Fitness - Cost       : 97714.95622238076
+	Best Solution:
+	----------------------------------------------------------
+	 Best Fitness - Cost       : 23406.54663258832
 	 Function Name             : Shifted Sphere
 	 Options                   : {'w': 0.85, 'c1': 1.0, 'c2': 1.5}
 	 Max  Iterations           : 500
@@ -34,6 +36,7 @@ In addition, I've included the execution time in seconds for each function.
 	 Dimension                 : 50
 	 Execution Time in seconds : 3
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 77
 ![Shifted Sphere for Dimension = 50](/images/PSO_ShiftedSphere_50.png)
 	
 	----------------------------------------------------------
