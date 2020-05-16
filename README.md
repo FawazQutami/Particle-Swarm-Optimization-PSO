@@ -11,8 +11,6 @@ but is also guided toward the best known positions in the search-space, which ar
 This is expected to move the swarm toward the best solutions." from: https://en.wikipedia.org/wiki/Particle_swarm_optimization
 
 
-This code is set up for a 2D optimization, however, this code can be simply 
-updated to allow for any number of dimensions with real-number solutions. 		
 ## Parameters that I have used in this simulation are:
 	1. w (Inertia Weight): is used to control the velocity:
     2. The acceleration coefficients: c1 (cognitive) and c2 (social)
@@ -20,9 +18,10 @@ updated to allow for any number of dimensions with real-number solutions.
         * c2 (social): expresses how much confidence a particle has in its neighbors
 	3. number of particles - Swarm Size
     4. Max number of iterations - Stopping Tolerance
+	
 
 I have tried, through the below cases, to understand the principle of PSO and how it works, especially, when tweaking the parameters to achieve 
-the best "global optimum".
+the best "global optimum". In addition, I've included the execution time in seconds for each function. 
 
 ## Study Cases: 
 
