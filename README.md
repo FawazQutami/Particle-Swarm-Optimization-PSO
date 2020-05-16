@@ -167,5 +167,5 @@ To start the execution open main.py file and then run the program.
 You need the below libraries:
 
 	1. numpy
-	2. matplotlib and basemap
+	2. matplotlib
  
