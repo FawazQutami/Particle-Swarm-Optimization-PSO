@@ -21,7 +21,7 @@ This is expected to move the swarm toward the best solutions." from: https://en.
 I have tried, through the below cases, to understand the principle of PSO and how it works, especially, when tweaking the parameters to achieve 
 the best "global optimum".
 For the sake of illustration, I have used the same parameters for all functions.
-In addition, I've included the total execution time in seconds for each function, where I will run it for 25 times, to evaluate the best solution possible. 
+In addition, I have recorded the total execution time in seconds for each function - after 25 repetitions, to produce the best solution possible.
 
 ### Unimodal Functions (2 functions):
 
