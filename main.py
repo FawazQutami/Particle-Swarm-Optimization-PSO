@@ -16,15 +16,41 @@ from PSO import PSO
 from plotting import plotPSO
 
 
-def runPSO(funcName, bounds, Dimension):
+def runPSO(funcName, bounds, Dimension,particles, iterations, options):
     """
-     Run PSO Function
+    Run PSO Function
+    :param funcName: string
+    :param bounds: list
+    :param Dimension: int
+    :param particles: int
+    :param iterations: int
+    :param options: dict
+    :return: obj
+    """
+    try:
+        # Total execution time
+
+        s = PSO(funcName
+                , bounds
+                , particles
+                , iterations
+                , Dimension
+                , options)
+        return s
+
+    except :
+        EH()
+
+def evaluations(funcName, bounds, Dimension):
+    """
+    Evaluation Function
     :param funcName: string
     :param bounds: list
     :param Dimension: int
     :return: None
     """
     try:
+
         # number of particles - Swarm Size
         particles = 100
         # Max number of iterations - Stopping Tolerance
@@ -40,23 +66,34 @@ def runPSO(funcName, bounds, Dimension):
         options = {'w': 0.85, 'c1': 1.0, 'c2': 1.5}
 
         print("\n Starting SPO ...")
-        # Total execution time
-        totalExecutionTime = 0
-        start = dt.datetime.now()
-        s = PSO(funcName
-                , bounds
-                , particles
-                , iterations
-                , Dimension
-                , options)
-        s.run()
-        print(s)
 
-        end = dt.datetime.now()
-        totalExecutionTime += (end - start).seconds
+        totalExecutionTime = 0
+        solutions =[]
+
+        for i in range(1, 26):
+            start = dt.datetime.now()
+            pso = runPSO(funcName, bounds, Dimension,particles, iterations, options)
+            pso.run()
+            solutions.append(pso)
+            end = dt.datetime.now()
+            totalExecutionTime += (end - start).seconds
+
+        # Sort the resulted array:
+        sortedList = sorted(solutions, key=lambda PSO: PSO.fitness)
+
+        # Rotate through the results and choose the best one:
+        print("\n-- Resulted Fitness:")
+        for i, s in enumerate(sortedList):
+            print(f"PSO {i + 1}, best fitness is {s.fitness}")
+
+        print()
+        bestPSO = sortedList[0]
+        print("Best Solution: \n", bestPSO)
+
+        print(f'Total Execution Time in seconds (repetitions: 25): {totalExecutionTime}')
 
         # Plot evaluation
-        plotPSO(s.Evaluation, funcName, s.fitness)
+        plotPSO(bestPSO.Evaluation, funcName, bestPSO.fitness)
 
     except :EH()
 
@@ -108,7 +145,7 @@ def main():
                         flag = False
                         break
                 if flag:
-                    runPSO(func_name, bounds, Dimension)
+                    evaluations(func_name, bounds, Dimension)
             else:
                 print("\n----------------------------------------------------------")
                 print("Required dimension is not in the list [2, 50, 100, 500]!")
