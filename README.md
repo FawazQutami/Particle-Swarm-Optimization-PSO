@@ -151,21 +151,21 @@ In addition, I have recorded the total execution time in seconds for each functi
 
 	Best Solution:
 	----------------------------------------------------------
-	 Best Fitness - Cost       : 17701.452049148484
+	 Best Fitness - Cost       : 16329.931567348067
 	 Function Name             : Shifted Griewank
 	 Options                   : {'w': 0.85, 'c1': 1.0, 'c2': 1.5}
 	 Max  Iterations           : 500
 	 No of Particles           : 100
 	 Dimension                 : 500
-	 Execution Time in seconds : 98
+	 Execution Time in seconds : 92
 	----------------------------------------------------------
-	Total Execution Time in seconds (repetitions: 25): 1178
+	Total Execution Time in seconds (repetitions: 25): 2321
 ![Shifted Griewank for Dimension = 500](/images/PSO_ShiftedGriewank_500.png)
 
 #### Shifted Ackley’s Function:
 	Best Solution:
 	----------------------------------------------------------
-	 Best Fitness - Cost       : -119.70686995054572
+	 Best Fitness - Cost       : -121.02136935446579
 	 Function Name             : Shifted Ackley
 	 Options                   : {'w': 0.85, 'c1': 1.0, 'c2': 1.5}
 	 Max  Iterations           : 500
@@ -173,7 +173,7 @@ In addition, I have recorded the total execution time in seconds for each functi
 	 Dimension                 : 50
 	 Execution Time in seconds : 5
 	----------------------------------------------------------
-	Total Execution Time in seconds (repetitions: 25): 1178
+	Total Execution Time in seconds (repetitions: 25): 129
 ![Shifted Ackley for Dimension = 50](/images/PSO_ShiftedAckley_50.png)
 	
 	Best Solution:
