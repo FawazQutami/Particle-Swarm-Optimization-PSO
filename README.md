@@ -39,18 +39,21 @@ In addition, I've included the total execution time in seconds for each function
 	Total Execution Time in seconds (repetitions: 25): 77
 ![Shifted Sphere for Dimension = 50](/images/PSO_ShiftedSphere_50.png)
 	
-	----------------------------------------------------------
-	 Best Fitness - Cost       : 2164027.101002602
+	Best Solution: 
+    ----------------------------------------------------------
+	 Best Fitness - Cost       : 1854383.698877279
 	 Function Name             : Shifted Sphere
 	 Options                   : {'w': 0.85, 'c1': 1.0, 'c2': 1.5}
 	 Max  Iterations           : 500
 	 No of Particles           : 100
 	 Dimension                 : 500
-	 Execution Time in seconds : 32
+	 Execution Time in seconds : 33
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 808
 ![Shifted Sphere for Dimension = 500](/images/PSO_ShiftedSphere_500.png)
 		 
 #### Shifted Schwefel’s Function:
+	Best Solution: 
 	----------------------------------------------------------
 	 Best Fitness - Cost       : -350.0
 	 Function Name             : Shifted Schwefel
@@ -58,19 +61,22 @@ In addition, I've included the total execution time in seconds for each function
 	 Max  Iterations           : 500
 	 No of Particles           : 100
 	 Dimension                 : 50
-	 Execution Time in seconds : 5
+	 Execution Time in seconds : 4
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 100
 ![Shifted Schwefel for Dimension = 50](/images/PSO_ShiftedSchwefel_50.png)
 	
-	----------------------------------------------------------
-	 Best Fitness - Cost       : -274.29291593722644
+	Best Solution: 
+	 ----------------------------------------------------------
+	 Best Fitness - Cost       : -284.2050102477849
 	 Function Name             : Shifted Schwefel
 	 Options                   : {'w': 0.85, 'c1': 1.0, 'c2': 1.5}
 	 Max  Iterations           : 500
 	 No of Particles           : 100
 	 Dimension                 : 500
-	 Execution Time in seconds : 48
+	 Execution Time in seconds : 44
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 1128
 ![Shifted Schwefel for Dimension = 500](/images/PSO_ShiftedSchwefel_500.png)
 
 ### Multimodal Functions (4 functions):
