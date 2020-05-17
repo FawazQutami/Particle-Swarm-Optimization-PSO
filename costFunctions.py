@@ -44,10 +44,10 @@ def values(fileName):
 # shifts:
 sphere = values("data/sphere.txt")
 schwefel = values("data/schwefel.txt")
-rosenbrock = values("data/rosenbrock.csv")
-rastrigin = values("data/rastrigin.csv")
-griewank = values("data/griewank.csv")
-ackley = values("data/ackley.csv")
+rosenbrock = values("data/rosenbrock.txt")
+rastrigin = values("data/rastrigin.txt")
+griewank = values("data/griewank.txt")
+ackley = values("data/ackley.txt")
 
 
 def costFunction(funcName, dim, x):
