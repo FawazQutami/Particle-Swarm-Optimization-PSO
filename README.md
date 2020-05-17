@@ -1,8 +1,8 @@
-# Metahourestics - Continuous Cases:
+# Metahourestics - Continuous Cases
 I have chosen Particle Swarm Optimization (PSO) algorithm, to minimize the functions, because it has some parameters 
 which I can tweak to reach a reasonable solution.
  
-# Particle Swarm Optimization (PSO):
+# Particle Swarm Optimization (PSO)
 "is a computational method that optimizes a problem by iteratively trying to improve a candidate solution with regard to a given measure of quality. 
 It solves a problem by having a population of candidate solutions, here dubbed particles, and moving these particles around in the search-space according 
 to simple mathematical formulae over the particle's position and velocity. Each particle's movement is influenced by its local best known position, 
@@ -17,7 +17,7 @@ This is expected to move the swarm toward the best solutions." from: https://en.
 	3. number of particles - Swarm Size
     4. Max number of iterations - Stopping Tolerance
 	
-## Study Cases: 
+## Study Cases 
 I have tried, through the below cases, to understand the principle of PSO and how it works, especially, when tweaking the parameters to achieve 
 the best "global optimum".
 For the sake of illustration, I have used the same parameters for all functions.
@@ -189,7 +189,7 @@ In addition, I have recorded the total execution time in seconds for each functi
 	Total Execution Time in seconds (repetitions: 25): 1178
 ![Shifted Ackley for Dimension = 500](/images/PSO_ShiftedAckley_500.png)
 	
-# Code written in Python. 
+# Code written in Python 
 This code favors readability and ease of understanding over speed and robustness 
 and is meant to be used as either a research tool or a study guide for anyone 
 intrested in learning about particle swarm optimization.  
