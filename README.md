@@ -82,8 +82,9 @@ In addition, I've included the total execution time in seconds for each function
 ### Multimodal Functions (4 functions):
 
 #### Shifted Rosenbrock’s Function:
+	Best Solution: 
 	----------------------------------------------------------
-	 Best Fitness - Cost       : 31211878655.17153
+	 Best Fitness - Cost       : 12962830594.928587
 	 Function Name             : Shifted Rosenbrock
 	 Options                   : {'w': 0.85, 'c1': 1.0, 'c2': 1.5}
 	 Max  Iterations           : 500
@@ -91,6 +92,7 @@ In addition, I've included the total execution time in seconds for each function
 	 Dimension                 : 50
 	 Execution Time in seconds : 4
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 101
 ![Shifted Rosenbrock for Dimension = 50](/images/PSO_ShiftedRosenbrock_50.png)
 	
 	----------------------------------------------------------
