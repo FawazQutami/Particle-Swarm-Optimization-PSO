@@ -95,20 +95,23 @@ In addition, I've included the total execution time in seconds for each function
 	Total Execution Time in seconds (repetitions: 25): 101
 ![Shifted Rosenbrock for Dimension = 50](/images/PSO_ShiftedRosenbrock_50.png)
 	
-	----------------------------------------------------------
-	 Best Fitness - Cost       : 1928486168823.2676
+	Best Solution: 
+ 	----------------------------------------------------------
+	 Best Fitness - Cost       : 1495758943556.2048
 	 Function Name             : Shifted Rosenbrock
 	 Options                   : {'w': 0.85, 'c1': 1.0, 'c2': 1.5}
 	 Max  Iterations           : 500
 	 No of Particles           : 100
 	 Dimension                 : 500
-	 Execution Time in seconds : 49
+	 Execution Time in seconds : 46
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 1178
  ![Shifted Rosenbrock for Dimension = 500](/images/PSO_ShiftedRosenbrock_500.png)
  
 #### Shifted Rastrigin’s Function:
+	Best Solution:
 	----------------------------------------------------------
-	 Best Fitness - Cost       : 210.23673024134303
+	 Best Fitness - Cost       : 61.65953346130971
 	 Function Name             : Shifted Rastrigin
 	 Options                   : {'w': 0.85, 'c1': 1.0, 'c2': 1.5}
 	 Max  Iterations           : 500
@@ -116,22 +119,26 @@ In addition, I've included the total execution time in seconds for each function
 	 Dimension                 : 50
 	 Execution Time in seconds : 7
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 178
 ![Shifted Rastrigin for Dimension = 50](/images/PSO_ShiftedRastrigin_50.png)
 	
+	Best Solution:
 	----------------------------------------------------------
-	 Best Fitness - Cost       : 9796.210653190274
+	 Best Fitness - Cost       : 9764.689230057094
 	 Function Name             : Shifted Rastrigin
 	 Options                   : {'w': 0.85, 'c1': 1.0, 'c2': 1.5}
 	 Max  Iterations           : 500
 	 No of Particles           : 100
 	 Dimension                 : 500
-	 Execution Time in seconds : 71
+	 Execution Time in seconds : 72
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 1788
 ![Shifted Rastrigin for Dimension = 500](/images/PSO_ShiftedRastrigin_500.png)
 
 #### Shifted Griewank’s Function:
+	Best Solution:
 	----------------------------------------------------------
-	 Best Fitness - Cost       : 457.1357536369958
+	 Best Fitness - Cost       : 261.9756391505077
 	 Function Name             : Shifted Griewank
 	 Options                   : {'w': 0.85, 'c1': 1.0, 'c2': 1.5}
 	 Max  Iterations           : 500
@@ -139,8 +146,10 @@ In addition, I've included the total execution time in seconds for each function
 	 Dimension                 : 50
 	 Execution Time in seconds : 9
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 227
 ![Shifted Griewank for Dimension = 50](/images/PSO_ShiftedGriewank_50.png)
-	
+
+	Best Solution:
 	----------------------------------------------------------
 	 Best Fitness - Cost       : 17701.452049148484
 	 Function Name             : Shifted Griewank
@@ -150,9 +159,11 @@ In addition, I've included the total execution time in seconds for each function
 	 Dimension                 : 500
 	 Execution Time in seconds : 98
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 1178
 ![Shifted Griewank for Dimension = 500](/images/PSO_ShiftedGriewank_500.png)
 
 #### Shifted Ackley’s Function:
+	Best Solution:
 	----------------------------------------------------------
 	 Best Fitness - Cost       : -119.70686995054572
 	 Function Name             : Shifted Ackley
@@ -162,8 +173,10 @@ In addition, I've included the total execution time in seconds for each function
 	 Dimension                 : 50
 	 Execution Time in seconds : 5
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 1178
 ![Shifted Ackley for Dimension = 50](/images/PSO_ShiftedAckley_50.png)
 	
+	Best Solution:
 	----------------------------------------------------------
 	 Best Fitness - Cost       : -118.80532748226929
 	 Function Name             : Shifted Ackley
@@ -173,6 +186,7 @@ In addition, I've included the total execution time in seconds for each function
 	 Dimension                 : 500
 	 Execution Time in seconds : 55
 	----------------------------------------------------------
+	Total Execution Time in seconds (repetitions: 25): 1178
 ![Shifted Ackley for Dimension = 500](/images/PSO_ShiftedAckley_500.png)
 	
 # Code written in Python. 
