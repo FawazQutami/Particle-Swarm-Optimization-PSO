@@ -2,7 +2,7 @@
 -- *********************************************
 -- Author       :	Fawaz Qutami
 -- Create date  :   10th May 2020
--- Description  :   Metaheuristics - Continuous Cases
+-- Description  :   Metaheuristics - Particle Swarm Optimization
 -- File Name    :   PSO.py
 -- *********************************************
 """
@@ -24,7 +24,7 @@ class Particle:
                  ,options
                  ):
         """
-        
+        Particle Class Initializer
         :param _bounds: list
         :param Dimension: int 
         :param _inertia: float
@@ -55,7 +55,9 @@ class Particle:
                     random.uniform(_bounds[i][0], _bounds[i][1]))
                 # Initialize the particle's velocity:
                 self.velocity.append(random.uniform(-1, 1))
-        except :EH()
+
+        except:
+            EH()
 
     def evaluate(self, fName):
         """
@@ -71,7 +73,9 @@ class Particle:
                 self.bestPosition = self.position
                 # Update the fitness of the best position
                 self.fitness = self.candidate
-        except: EH()
+
+        except:
+            EH()
 
     def updateVelocity(self, gbp_Position):
         """
@@ -95,7 +99,9 @@ class Particle:
                                    * self.velocity[i] \
                                    + cognitiveVelocity \
                                    + socialVelocity
-        except: EH()
+
+        except:
+            EH()
 
     def updatePosition(self, _bounds):
         """
@@ -113,6 +119,7 @@ class Particle:
                 # check and repair to satisfy the lower bounds
                 if self.position[i] < _bounds[i][0]:
                     self.position[i] = _bounds[i][0]
+
         except:
             EH()
 
@@ -128,7 +135,7 @@ class PSO():
                  ,options
                  ):
         """
-
+        PSO Initializer
         :param funcName: string
         :param bound: list
         :param particleSize: int
@@ -166,6 +173,7 @@ class PSO():
             #self.target_error =  10e-8
             self.options = options
             self.Dimension = Dimension
+
         except:
             EH()
 
@@ -224,4 +232,6 @@ class PSO():
 
             end = dt.datetime.now()
             self.executionTime = (end - start).seconds
-        except:EH()
+
+        except:
+            EH()
