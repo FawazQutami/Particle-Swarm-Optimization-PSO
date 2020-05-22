@@ -2,7 +2,7 @@
 -- *********************************************
 -- Author       :	Fawaz Qutami
 -- Create date  :   10th May 2020
--- Description  :   Metaheuristics - Continuous Cases
+-- Description  :   Cost Functions - Continuous Cases
 -- File Name    :   costFunctions.py
 -- *********************************************
 """
@@ -37,6 +37,7 @@ def values(fileName):
                         _value.append(float(it))
         #print(len(_value))
         return _value
+
     except:
         EH()
 
@@ -73,6 +74,7 @@ def costFunction(funcName, dim, x):
         else:
              print("Error : Function number out of range\n")
              exit()
+
     except:
         EH()
 
@@ -101,6 +103,7 @@ def Schwefel_Problem(dim , x):
             F = max(F, np.abs(z))
 
         return F + f_bias[1]
+
     except:
         EH()
 
@@ -120,6 +123,7 @@ def Shifted_Rosenbrock(dim , x):
                 + math.pow((z[i] - 1), 2)
 
         return F + f_bias[2]
+
     except:
         EH()
 
@@ -133,6 +137,7 @@ def Shifted_Rastrigin(dim , x):
             F = F + (math.pow(z, 2) - 10 * np.cos(2 * np.pi * z) + 10)
 
         return F + f_bias[3]
+
     except:
         EH()
 
@@ -150,6 +155,7 @@ def Shifted_Griewank(dim , x):
         F = F1 - F2 + 1 + f_bias[4]
 
         return F
+
     except:
         EH()
 
@@ -168,5 +174,6 @@ def Shifted_Ackley(dim, x):
             - np.exp(Sum2 / dim) + 20 + np.e + f_bias[5]
 
         return F
+    
     except:
         EH()
