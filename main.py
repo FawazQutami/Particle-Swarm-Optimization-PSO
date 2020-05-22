@@ -2,7 +2,7 @@
 -- *********************************************
 -- Author       :	Fawaz Qutami
 -- Create date  :   10th May 2020
--- Description  :   Metaheuristics - Continuous Cases
+-- Description  :   Metaheuristics - Particle Swarm Optimization
 -- File Name    :   main.py
 -- *********************************************
 """
@@ -14,6 +14,7 @@ import datetime as dt
 from eHandler import PrintException as EH
 from PSO import PSO
 from plotting import plotPSO
+from setup import install_required_Packages
 
 
 def runPSO(funcName, bounds, Dimension,particles, iterations, options):
@@ -38,7 +39,7 @@ def runPSO(funcName, bounds, Dimension,particles, iterations, options):
                 , options)
         return s
 
-    except :
+    except:
         EH()
 
 def evaluations(funcName, bounds, Dimension):
@@ -95,7 +96,8 @@ def evaluations(funcName, bounds, Dimension):
         # Plot evaluation
         plotPSO(bestPSO.Evaluation, funcName, bestPSO.fitness)
 
-    except :EH()
+    except:
+        EH()
 
 
 def main():
@@ -104,10 +106,13 @@ def main():
     :return: None
     """
     try:
-        flag = False
         while True:
+            func_name, bounds = None, None
+            flag = None
             D_range = [2, 50, 500]
-            Dimension = int(input("\n Enter a dimension --> [2, 50, 500]: "))
+            print("\n Choose a dimension from the following list: [2, 50, 500]")
+            print("\t or press any other KEY to EXIT .....")
+            Dimension = int(input("\n Enter a dimension --> "))
 
             if Dimension in D_range:
                 flag = True
@@ -150,9 +155,17 @@ def main():
                 print("\n----------------------------------------------------------")
                 print("Required dimension is not in the list [2, 50, 100, 500]!")
                 print("----------------------------------------------------------\n")
+                break
 
-    except :EH()
+    except:
+        EH()
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        # Install Required packages
+        install_required_Packages()
+        main()
+
+    except:
+        EH()
