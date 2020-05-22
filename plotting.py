@@ -2,7 +2,7 @@
 -- *********************************************
 -- Author       :	Fawaz Qutami
 -- Create date  :   10th May 2020
--- Description  :   Metaheuristics - Continuous Cases
+-- Description  :   Plotting Functions
 -- File Name    :   plotting.py
 -- *********************************************
 """
@@ -31,4 +31,6 @@ def plotPSO(Evaluation, funcName, fitness):
                     linewidths=1)
         plt.legend()
         plt.show()
-    except :EH()
+
+    except:
+        EH()
