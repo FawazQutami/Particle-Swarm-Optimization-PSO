@@ -2,7 +2,7 @@
 -- *********************************************
 -- Author       :	Fawaz Qutami
 -- Create date  :   10th May 2020
--- Description  :   Metaheuristics
+-- Description  :   Exception Handling Function
 -- File Name    :   eHandler.py
 -- *********************************************
 """
