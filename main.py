@@ -7,9 +7,6 @@
 -- *********************************************
 """
 
-# load Packages
-import datetime as dt
-
 # load local packages
 from eHandler import PrintException as EH
 from PSO import PSO
@@ -165,6 +162,10 @@ if __name__ == "__main__":
     try:
         # Install Required packages
         install_required_Packages()
+        # load Packages
+        import datetime as dt
+
+
         main()
 
     except:
