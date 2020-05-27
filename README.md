@@ -190,8 +190,7 @@ In addition, I have recorded the total execution time in seconds for each functi
 ![Shifted Ackley for Dimension = 500](/images/PSO_ShiftedAckley_500.png)
 	
 # Code written in Python 
-This code favours readability and ease of understanding over speed and robustness and is meant to be used as either a research tool 
-or a study guide for anyone interested in learning about Particle Swarm Optimization. 
+This code is meant to be used as either a research tool or a study guide for anyone interested in learning about Particle Swarm Optimization. 
 
 To start the execution open main.py file and then run the program.
 You need the below libraries:
