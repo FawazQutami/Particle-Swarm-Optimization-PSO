@@ -1,4 +1,4 @@
-# Metahourestics - Continuous Cases
+# Metaheuristics - Continuous Cases
 I have chosen Particle Swarm Optimization (PSO) algorithm, to minimize the functions, because it has some parameters 
 which I can tweak to reach a reasonable solution.
  
