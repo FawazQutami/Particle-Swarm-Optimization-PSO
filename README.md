@@ -7,7 +7,7 @@ which I can tweak to reach a reasonable solution.
 It solves a problem by having a population of candidate solutions, here dubbed particles, and moving these particles around in the search-space according 
 to simple mathematical formulae over the particle's position and velocity. Each particle's movement is influenced by its local best known position, 
 but is also guided toward the best known positions in the search-space, which are updated as better positions, found by other particles. 
-This is expected to move the swarm toward the best solutions." from: [PSO - Wikipedia](https://en.wikipedia.org/wiki/Particle_swarm_optimization)
+This is expected to move the swarm toward the best solutions."[PSO - Wikipedia](https://en.wikipedia.org/wiki/Particle_swarm_optimization)
 
 ## Parameters that I have used in this simulation are:
 	1. w (Inertia Weight): is used to control the velocity:
